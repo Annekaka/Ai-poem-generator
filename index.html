@@ -9,23 +9,27 @@
   <body>
     <header><h1>Ai poem generator</h1></header>
     <main>
-      <div>
-        <form>
-          <input
-            type="text"
-            placeholder="Enter the topic for the poem"
-            autofocus
-            required
-            autocomplete="off"
-          />
-          <input type="submit" />
-        </form>
-      </div>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-        Odit, tempora quod! Odit corporis ad reprehenderit temporibus magnam
-        quidem rerum exercitationem nulla ex nostrum? <br />
-        Voluptatem, consectetur! Ut quia illo praesentium pariatur?
+      <div id="container">
+        <div class="input-container">
+          <form>
+            <input
+              class="text-submit"
+              type="text"
+              placeholder="Enter the topic for the poem"
+              autofocus
+              required
+              autocomplete="off"
+            />
+            <input type="submit" class="submit-btn" />
+          </form>
+          <p>i.e Flowers, Plants, Places</p>
+        </div>
+        <div class="poem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Odit, tempora quod! Odit corporis ad reprehenderit temporibus magnam
+          quidem rerum exercitationem nulla ex nostrum? <br />
+          Voluptatem, consectetur! Ut quia illo praesentium pariatur?
+        </div>
       </div>
     </main>
     <footer>
