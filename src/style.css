@@ -1,13 +1,14 @@
 body {
   text-align: center;
   margin: 0;
-  background-color: aliceblue;
+  background-color: #fdfdfd;
   font-family: Arial, Helvetica, sans-serif;
+  color: #264653;
 }
 
 header,
 h1 {
-  color: blue;
+  color: #2a9d8f;
   font-size: 2em;
 }
 #container {
@@ -26,33 +27,50 @@ h1 {
   box-shadow: 0 4px 30px 0 rgba(39, 33, 66, 0.03);
 }
 
-#poem {
+.poem {
   background-color: white;
   border-radius: 10px;
-  border-left: blue 5px solid;
+  border-left: #2a9d8f 5px solid;
+  color: #264653;
   font-size: 20px;
   padding: 15px;
   margin: 20px 0;
   line-height: 2;
   box-shadow: 0 4px 30px 0 rgba(39, 33, 66, 0.03);
 }
+.hidden {
+  display: none;
+}
+
 input {
   border-radius: 10px;
   font-size: 20px;
   padding: 5px 10px;
-  color: gray;
+  margin-bottom: 10px;
 }
 
 .text-submit {
   width: 60%;
+  color: #e76f51;
+  border: #e9c46a solid 2px;
 }
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 .submit-btn {
   margin-left: 10px;
-  border: blue 1px solid;
+  border: #e76f51 2px solid;
   font-size: 20px;
-  background-color: blue;
-  color: white;
+  background-color: #e76f51;
+  color: #fff;
   padding: 5px 10px;
+}
+.submit-btn:hover {
+  background-color: #fff;
+  color: #e76f51;
 }
 
 h1 {
@@ -61,5 +79,15 @@ h1 {
 
 a {
   text-decoration: none;
-  color: blue;
+  color: #f4a261;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink 1s ease-in-out 0s infinite;
 }
