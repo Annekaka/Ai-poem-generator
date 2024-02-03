@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>AI poem generator</title>
   </head>
   <body>
@@ -11,7 +13,7 @@
     <main>
       <div id="container">
         <div class="input-container">
-          <form>
+          <form id="poem-generator-form">
             <input
               class="text-submit"
               type="text"
@@ -24,7 +26,7 @@
           </form>
           <p>i.e Flowers, Plants, Places</p>
         </div>
-        <div class="poem">
+        <div id="poem">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
           Odit, tempora quod! Odit corporis ad reprehenderit temporibus magnam
           quidem rerum exercitationem nulla ex nostrum? <br />
